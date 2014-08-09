@@ -100,7 +100,7 @@ void loop(){
       delay(drainTime * .50);
       }
       digitalWrite(valve, LOW);
-      digitalWrite(startLed, LOW);
+      digitalWrite(startLed, HIGH);
     }
     
   }
@@ -127,6 +127,8 @@ void loop(){
     }
      
    }
+   delay(250);
+   resetBtn = HIGH;
   
   
 }
